@@ -10,14 +10,17 @@ public abstract class Transport {
     public String getModelName() {
         return modelName;
     }
-
     public int getWheelsCount() {
         return wheelsCount;
     }
 
-    abstract void updateTyre();
-
-    abstract void checkEngine();
-
-    abstract void checkTrailer();
+    @Override
+    public String toString() {
+        return "Transport{" +
+                "modelName='" + modelName + '\'' +
+                ", wheelsCount=" + wheelsCount +
+                '}';
+    }
+    public void doService() {
+    }
 }
